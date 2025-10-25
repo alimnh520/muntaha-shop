@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home, ShoppingBag, Info, Phone, Heart, LayoutDashboard } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -10,51 +10,62 @@ export default function Header() {
     const pathName = usePathname();
 
     const links = [
-        { name: 'হোম', href: '/' },
-        { name: 'পণ্য', href: '/components/products' },
-        { name: 'আমাদের সম্পর্কে', href: '/components/about' },
-        { name: 'যোগাযোগ', href: '/components/contact' },
-        { name: 'হোয়াইটলিস্ট', href: '/components/whitelist' },
-        { name: 'ড্যাশবোর্ড', href: '/components/dashboard' },
+        { name: 'Home', href: '/', icon: <Home className="w-4 h-4 mr-2" /> },
+        { name: 'Products', href: '/components/products', icon: <ShoppingBag className="w-4 h-4 mr-2" /> },
+        { name: 'About Us', href: '/components/about', icon: <Info className="w-4 h-4 mr-2" /> },
+        { name: 'Contact', href: '/components/contact', icon: <Phone className="w-4 h-4 mr-2" /> },
+        { name: 'Wishlist', href: '/components/whitelist', icon: <Heart className="w-4 h-4 mr-2" /> },
+        { name: 'Dashboard', href: '/components/dashboard', icon: <LayoutDashboard className="w-4 h-4 mr-2" /> },
     ];
 
     return (
         <header className="w-full text-white bg-[#f85606] shadow-md fixed top-0 left-0 z-50">
             <div className="max-w-7xl mx-auto px-3 md:px-12 lg:px-16 flex justify-between items-center h-12 sm:h-16">
-                {/* লোগো */}
+
+                {/* Logo */}
                 <div className="flex items-center gap-3">
-                    <img src="/my-logo.jpg" alt="লোগো" className="sm:h-14 h-10 -mt-0.5 object-contain" />
-                    <div className="flex flex-col items-center justify-center">
-                        <p className='logo-font text-[15px] font-bold sm:text-2xl'>ABDULLAH ONLINE SHOP</p>
+                    <img
+                        src="/my-logo.jpg"
+                        alt="Logo"
+                        className="sm:h-14 h-10 -mt-0.5 object-contain rounded-full border-2 border-white"
+                    />
+                    <div className="flex flex-col justify-center">
+                        <p className='logo-font text-[15px] font-bold sm:text-2xl tracking-wide'>
+                            ABDULLAH ONLINE SHOP
+                        </p>
                     </div>
                 </div>
 
-                {/* ডেস্কটপ মেনু */}
+                {/* Desktop Menu */}
                 <nav className="hidden md:flex items-center gap-8">
                     {links.map((link) => (
                         <Link
                             key={link.name}
                             href={link.href}
-                            className=" text-[15px] relative group font-medium transition"
+                            className="flex items-center text-[15px] relative group font-medium transition"
                         >
+                            <span className='mb-1'>{link.icon}</span>
                             {link.name}
-                            <span className={`absolute left-0 ${pathName === link.href && "w-full"} -bottom-1 w-0 h-0.5 bg-white transition-all group-hover:w-full`}></span>
+                            <span
+                                className={`absolute left-0 ${pathName === link.href ? "w-full" : "w-0"} 
+                                -bottom-1 h-0.5 bg-white transition-all group-hover:w-full`}
+                            ></span>
                         </Link>
                     ))}
                 </nav>
 
-                {/* মোবাইল মেনু বাটন */}
+                {/* Mobile Menu Button */}
                 <div className="md:hidden mt-2">
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        className="text-gray-200 "
+                        className="text-gray-200"
                     >
                         {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
                 </div>
             </div>
 
-            {/* মোবাইল মেনু animation সহ */}
+            {/* Mobile Menu with Animation */}
             <AnimatePresence>
                 {mobileMenuOpen && (
                     <motion.div
@@ -70,8 +81,9 @@ export default function Header() {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="text-gray-800  hover:text-gray-900 font-medium transition"
+                                    className="flex items-center text-gray-800 hover:text-[#f85606] font-medium transition"
                                 >
+                                    <span className='mb-1'>{link.icon}</span>
                                     {link.name}
                                 </Link>
                             ))}

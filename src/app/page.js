@@ -3,6 +3,7 @@ import Animation from './components/Animations'
 import OfferProductsPage from './components/OfferedProduct'
 import CategoriesPage from './components/Category'
 import AllProducts from './components/AllProducts'
+import FeaturesPage from './components/FeaturePage'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <OfferProductsPage/>
       <CategoriesPage/>
       <AllProducts/>
+      <FeaturesPage/>
     </div>
   )
 }

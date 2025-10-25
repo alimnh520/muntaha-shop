@@ -68,7 +68,7 @@ export default function CategoriesPage() {
                                 alt={cat.label}
                                 width={300}
                                 height={300}
-                                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                                className="h-full group-hover:scale-110 transition-transform duration-500"
                             />
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                         </Link>

@@ -95,7 +95,7 @@ export default function Page() {
     return (
         <div className="sm:w-10/12 mx-auto py-3 sm:px-0 px-4 flex flex-col gap-y-3 sm:mt-3">
             <h1 className="sm:text-3xl text-xl font-bold text-[#933100] mb-2 w-full pb-2 border-b border-[#933100]">
-                🛒 সকল পণ্য
+                সকল পণ্য
             </h1>
 
             {/* 🔍 সার্চ */}

@@ -138,9 +138,9 @@ export default function OrderPage() {
         return (
             <div className="w-full flex justify-center items-center py-20">
                 <div className="flex space-x-2">
-                    <div className="w-4 h-4 bg-[#f85606] rounded-full animate-bounce" />
-                    <div className="w-4 h-4 bg-[#f85606] rounded-full animate-bounce delay-200" />
-                    <div className="w-4 h-4 bg-[#f85606] rounded-full animate-bounce delay-400" />
+                    <div className="w-4 h-4 bg-red-500 rounded-full animate-bounce" style={{ animationDelay: "0s" }}></div>
+                    <div className="w-4 h-4 bg-red-500 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                    <div className="w-4 h-4 bg-red-500 rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
                 </div>
             </div>
         );

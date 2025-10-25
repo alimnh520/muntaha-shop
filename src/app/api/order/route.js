@@ -33,29 +33,23 @@ export async function POST(request) {
             return NextResponse.json({ message: "❌ পণ্য পাওয়া যায়নি!", success: false });
         }
 
-        // ডিসকাউন্ট প্রয়োগ
-        const price = product.discount > 0
-            ? Math.round(product.price - (product.price * product.discount) / 100)
-            : product.price;
+        const price = Number(
+            product.discount > 0
+                ? Math.round(Number(product.price) - (Number(product.price) * Number(product.discount)) / 100)
+                : product.price
+        );
 
-        // প্রোডাক্টের নিজস্ব ডেলিভারি চার্জ ব্যবহার
-        const deliveryCharge = product.deliveryCharge || 0;
-        const totalPrice = (price * quantity) + deliveryCharge;
+        const deliveryCharge = Number(product.deliveryCharge || 0);
+        const qty = Number(quantity || 1);
+        const totalPrice = (price * qty) + deliveryCharge;
 
-        // নোটিফিকেশন সেভ
-        const saveNotify = new notification({
-            title: `${product.product_name} এর নতুন অর্ডার এসেছে!`
-        });
-        await saveNotify.save();
-
-        // অর্ডার সেভ
         const saveOrder = new Order({
             productId,
             productName: product.product_name,
             productImage: product.product_image?.[0] || "",
             price,
-            quantity,
-            deliveryCharge,
+            quantity: qty,
+            deliveryCharge,   // ✅ মডেলেও থাকতে হবে
             totalPrice,
             name,
             mobile,
@@ -68,9 +62,9 @@ export async function POST(request) {
             status: "pending"
         });
 
+
         await saveOrder.save();
 
-        // পণ্যের বিক্রয় সংখ্যা বাড়ানো
         await productCollection.updateOne(
             { _id: new ObjectId(productId) },
             { $inc: { soldCount: quantity || 1 } }

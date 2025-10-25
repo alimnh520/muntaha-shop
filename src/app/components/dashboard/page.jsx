@@ -44,7 +44,7 @@ export default function Dashboard() {
                     <SidebarButton label="সকল পণ্য" icon={<List className="w-5 h-5" />} active={activeTab === "products"} onClick={() => { setActiveTab("products"); setSidebarOpen(false); }} />
                     <SidebarButton label="নতুন নোটিশ" icon={<Megaphone className="w-5 h-5" />} active={activeTab === "add-notice"} onClick={() => { setActiveTab("add-notice"); setSidebarOpen(false); }} />
                     <SidebarButton label="সকল বার্তা" icon={<FaMailBulk className="w-5 h-5" />} active={activeTab === "notices"} onClick={() => { setActiveTab("notices"); setSidebarOpen(false); }} />
-                    <SidebarButton label="বিজ্ঞাপণ" icon={<FaImage className="w-5 h-5" />} active={activeTab === "notices"} onClick={() => { setActiveTab("slider"); setSidebarOpen(false); }} />
+                    <SidebarButton label="বিজ্ঞাপণ" icon={<FaImage className="w-5 h-5" />} active={activeTab === "slider"} onClick={() => { setActiveTab("slider"); setSidebarOpen(false); }} />
                     <SidebarButton label="নতুন পাসওয়ার্ড" icon={<FaKey className="w-5 h-5" />} active={activeTab === "password"} onClick={() => { setActiveTab("password"); setSidebarOpen(false); }} />
                 </nav>
             </aside>

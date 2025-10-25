@@ -172,10 +172,10 @@ export default function Orders() {
                                         <p> একক পণ্যের দাম: <span className="font-semibold text-[#933100]">৳ {selectedOrder.price}</span></p>
                                         <p> পরিমাণ: <span className="font-semibold">{selectedOrder.quantity} টি</span></p>
                                         <p> মোট (পণ্য): <span className="font-semibold">৳ {selectedOrder.price * selectedOrder.quantity}</span></p>
-                                        <p> ডেলিভারি চার্জ: <span className="font-semibold text-blue-600">৳ {selectedOrder.deliveryCharge ?? 0}</span></p>
+                                        <p> ডেলিভারি চার্জ: <span className="font-semibold text-blue-600">৳ {selectedOrder.deliveryCharge}</span></p>
                                         <hr className="my-1 border-gray-300" />
                                         <p className="text-lg font-bold text-[#f85606]">
-                                            সর্বমোট: ৳ {(selectedOrder.price * selectedOrder.quantity) + (selectedOrder.deliveryCharge ?? 0)}
+                                            সর্বমোট: ৳ {(selectedOrder.price * selectedOrder.quantity) + (selectedOrder.deliveryCharge)}
                                         </p>
                                     </div>
                                 </div>

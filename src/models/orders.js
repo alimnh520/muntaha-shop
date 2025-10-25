@@ -30,6 +30,11 @@ const orderSchema = new mongoose.Schema(
             required: true,
             min: 0,
         },
+        deliveryCharge: {
+            type: Number,
+            required: true,
+            min: 0,
+        },
         name: {
             type: String,
             required: true,

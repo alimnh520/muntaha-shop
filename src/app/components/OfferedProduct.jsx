@@ -31,7 +31,7 @@ export default function OfferProductsPage() {
                 <h1 className="sm:text-2xl text-xl font-bold text-[#f85606] mb-5 w-full pb-2 border-b border-b-[#f85606]">
                     ধামাকা অফার
                 </h1>
-                {products.length > 6 && <Link href='/components/offered' className="w-28 px-2 py-1.5 sm:text-lg text-sm bg-[#f85606] rounded-md text-white -mt-4 text-center">আরো দেখুন</Link>}
+                <Link href='/components/offered' className="w-28 sm:w-24 px-2 py-1.5 text-sm bg-[#f85606] rounded-md text-white -mt-3 text-center">আরো দেখুন</Link>
             </div>
 
             {products.length === 0 ? (
