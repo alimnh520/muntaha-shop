@@ -18,7 +18,7 @@ export default function NoticeHeadline() {
     }, [controls]);
 
     return (
-        <div className="bg-[#f85606] py-1 overflow-hidden relative">
+        <div className="bg-[#f85606] py-0 overflow-hidden relative">
             <motion.div
                 initial={{ x: "100%" }}
                 animate={controls}

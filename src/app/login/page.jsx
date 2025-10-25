@@ -39,7 +39,7 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 via-blue-100 to-purple-200">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 via-blue-100 to-purple-200 sm:-mt-16 -mt-14">
             {/* 🔹 Card */}
             <div className="relative w-full max-w-md bg-white/80 backdrop-blur-xl rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] p-8 border border-white/40 dark:border-gray-700 transition-all hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)]">
 

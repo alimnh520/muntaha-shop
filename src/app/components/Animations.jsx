@@ -1,6 +1,6 @@
 'use client';
+import { RiArrowLeftWideLine, RiArrowRightWideLine } from "react-icons/ri";
 import React, { useEffect, useState, useRef } from 'react';
-import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 import { motion, AnimatePresence } from "framer-motion";
 import NoticeHeadline from './Notice';
 
@@ -76,11 +76,11 @@ export default function Animation() {
     }
 
     return (
-        <div className="flex flex-col gap-y-2 w-full">
-            <div className="flex flex-col sm:flex-row w-full gap-3 px-2 sm:px-0">
+        <div className="flex flex-col gap-y-1 w-full">
+            <div className="flex flex-col sm:flex-row w-full gap-3">
                 {/* 🔹 Main Slider */}
                 <div
-                    className="relative sm:flex-1 h-[180px] sm:h-[260px] md:h-[350px] lg:h-[420px] overflow-hidden rounded-lg shadow-md"
+                    className="relative sm:flex-1 h-[160px] sm:h-[240px] md:h-[320px] lg:h-[380px] overflow-hidden sm:rounded-lg"
                     onTouchStart={handleTouchStart}
                     onTouchEnd={handleTouchEnd}
                 >
@@ -100,7 +100,7 @@ export default function Animation() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -30 }}
                                 transition={{ duration: 0.6 }}
-                                className="text-yellow-300 text-base sm:text-2xl md:text-4xl font-bold italic drop-shadow-lg"
+                                className="text-[#f85606] absolute bottom-20 text-base sm:text-2xl md:text-4xl font-bold italic drop-shadow-lg"
                             >
                                 {slides[activeIndex]?.text}
                             </motion.p>
@@ -110,15 +110,15 @@ export default function Animation() {
                     {/* 🔹 Navigation Buttons */}
                     <button
                         onClick={handlePrev}
-                        className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 sm:p-2 text-xl sm:text-3xl z-10"
+                        className="absolute left-0 bg-[#f5f5f5] top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 hover:text-gray-600 py-5 text-xl sm:text-3xl z-10"
                     >
-                        <CiCircleChevLeft />
+                        <RiArrowLeftWideLine />
                     </button>
                     <button
                         onClick={handleNext}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 sm:p-2 text-xl sm:text-3xl z-10"
+                        className="absolute right-0 bg-[#f5f5f5] top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 hover:text-gray-600 py-5 text-xl sm:text-3xl z-10"
                     >
-                        <CiCircleChevRight />
+                        <RiArrowRightWideLine />
                     </button>
 
                     {/* 🔹 Indicators */}

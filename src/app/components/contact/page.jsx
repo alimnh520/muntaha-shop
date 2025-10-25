@@ -55,23 +55,23 @@ export default function ContactPage() {
 
                     <div className="flex items-center gap-3">
                         <Phone className="text-green-500 w-5 h-5" />
-                        <p className="text-gray-700">+880 1566-099299, +880 1813-623629</p>
+                        <p className="text-gray-700">+880 138194740</p>
                     </div>
 
                     <div className="flex items-center gap-3">
                         <Mail className="text-green-500 w-5 h-5" />
-                        <p className="text-gray-700">khandokarabdullahbd@gmail.com</p>
+                        <p className="text-gray-700">mostafizurrahman404434@gmail.com</p>
                     </div>
 
                     <div className="flex items-center gap-3">
                         <MapPin className="text-green-500 w-5 h-5" />
-                        <p className="text-gray-700">৩৩,লবনচরা বান্দাবাজার,শিপইয়ার্ডরোড, খুলনা</p>
+                        <p className="text-gray-700">নতুন বাজার, কাশিমাড়ী - শ্যামনগর,সাতক্ষীরা</p>
                     </div>
 
                     <h3 className="text-lg font-semibold text-[#f85606] mt-6">🌐 সোশ্যাল মিডিয়া</h3>
                     <div className="flex gap-4 mt-2">
                         <a href="https://www.facebook.com/abdullahonlineshoppingbd" className="text-blue-600 hover:text-blue-800"><Facebook /></a>
-                        <a href="https://wa.link/eefh9h" className="text-sky-500 hover:text-sky-700 text-2xl"><FaWhatsapp/></a>
+                        <a href="https://wa.link/boep4i" className="text-sky-500 hover:text-sky-700 text-2xl"><FaWhatsapp/></a>
                         <a href="#" className="text-pink-500 hover:text-pink-700"><Instagram /></a>
                     </div>
                 </motion.div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                     transition={{ duration: 0.6 }}
                     className="rounded-lg overflow-hidden shadow-md"
                 >
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99734.21194385654!2d89.4498626019533!3d22.84550795405857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9071cb47152f%3A0xf04b212290718952!2sKhulna!5e1!3m2!1sen!2sbd!4v1758034351365!5m2!1sen!2sbd" width="100%"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.13187188711!2d89.17746595544901!3d22.374210435479196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a01c5aa5d3aa661%3A0xa525f67e554364b2!2sKasimari%20New%20Market!5e1!3m2!1sen!2sbd!4v1761420725256!5m2!1sen!2sbd" width="100%"
                         height="400"
                         style={{ border: 0 }}
                         allowFullScreen=""

@@ -3,13 +3,18 @@ import { connectDB } from "@/lib/connectDb";
 import Slide from "@/models/Slide";
 import { UploadImage } from "@/cloudinary/cloudUpload";
 import cloudinary from "@/cloudinary/cloudConfig";
+import { getCollection } from "@/lib/mongoClient";
 
 export async function GET() {
-    await connectDB();
-    const slides = await Slide.find().sort({ createdAt: -1 });
-    return NextResponse.json({ slides });
+    try {
+        const collection = await getCollection("slides");
+        const slides = await collection.find({}).toArray();
+        return NextResponse.json({ slides });
+    } catch (error) {
+        console.log(error);
+        return NextResponse.json({ message: 'সার্ভারে সমস্যা', success: false });
+    }
 }
-
 
 export async function POST(req) {
     try {
