@@ -55,7 +55,7 @@ export default function ContactPage() {
 
                     <div className="flex items-center gap-3">
                         <Phone className="text-green-500 w-5 h-5" />
-                        <p className="text-gray-700">+880 138194740</p>
+                        <p className="text-gray-700">+880 1738194740</p>
                     </div>
 
                     <div className="flex items-center gap-3">
@@ -65,7 +65,7 @@ export default function ContactPage() {
 
                     <div className="flex items-center gap-3">
                         <MapPin className="text-green-500 w-5 h-5" />
-                        <p className="text-gray-700">নতুন বাজার, কাশিমাড়ী - শ্যামনগর,সাতক্ষীরা</p>
+                        <p className="text-gray-700">নতুন বাজার-কাশিমাড়ী, শ্যামনগর - সাতক্ষীরা</p>
                     </div>
 
                     <h3 className="text-lg font-semibold text-[#f85606] mt-6">🌐 সোশ্যাল মিডিয়া</h3>

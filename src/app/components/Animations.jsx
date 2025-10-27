@@ -88,7 +88,7 @@ export default function Animation() {
                         className="absolute inset-0 bg-cover bg-center transition-all duration-700"
                         style={{ backgroundImage: `url(${slides[activeIndex]?.imageUrl})` }}
                     >
-                        <div className="absolute inset-0 bg-black/30" />
+                        <div className="absolute inset-0 bg-black/20" />
                     </div>
 
                     {/* 🔹 Text */}
@@ -100,7 +100,7 @@ export default function Animation() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -30 }}
                                 transition={{ duration: 0.6 }}
-                                className="text-[#f85606] absolute bottom-20 text-base sm:text-2xl md:text-4xl font-bold italic drop-shadow-lg"
+                                className="text-[#f85606] absolute whitespace-pre-wrap text-start bottom-20 left-20 text-base sm:text-2xl md:text-4xl font-bold italic drop-shadow-lg"
                             >
                                 {slides[activeIndex]?.text}
                             </motion.p>

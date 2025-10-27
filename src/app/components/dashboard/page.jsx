@@ -25,9 +25,9 @@ export default function Dashboard() {
                     ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} 
                     md:translate-x-0 md:static md:inset-0`}
             >
-                <div className="flex justify-between items-center mb-8">
+                <div className="flex justify-between items-center mb-6 lg:mt-0 mt-10">
                     <div className="flex items-center gap-x-3">
-                        <img src="/my-logo.jpg" alt="লোগো" className="w-10 h-10 object-contain" />
+                        <img src="/my-logo.png" alt="লোগো" className="w-10 h-10 object-contain" />
                         <h1 className="text-2xl font-bold mt-2">ড্যাশবোর্ড</h1>
                     </div>
                     <button

@@ -26,7 +26,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-4 md:w-1/3">
                     <div className="flex items-center gap-3">
                         <img
-                            src="/logo/my-logo.jpg"
+                            src="/logo/my-logo.png"
                             alt="Logo"
                             className="h-16 w-auto rounded-md object-cover shadow-sm"
                         />
@@ -73,11 +73,11 @@ export default function Footer() {
                     <div className="space-y-2 text-sm text-gray-600">
                         <div className="flex items-center gap-2">
                             <MapPin className="w-4 h-4 text-[#f85606]" />
-                            <span>নতুন বাজার, কাশিমাড়ী - শ্যামনগর, সাতক্ষীরা</span>
+                            <span>নতুন বাজার-কাশিমাড়ী, শ্যামনগর - সাতক্ষীরা</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <Phone className="w-4 h-4 text-[#f85606]" />
-                            <a href="tel:+880138194740" className="hover:text-[#f85606] transition">+880 1381-94740</a>
+                            <a href="tel:+880138194740" className="hover:text-[#f85606] transition">+880 13781-94740</a>
                         </div>
                         <div className="flex items-center gap-2">
                             <Mail className="w-4 h-4 text-[#f85606]" />

@@ -27,7 +27,7 @@ export default function LoginPage() {
 
             if (data.success) {
                 toast.success("✅ লগইন সফল!", { position: "bottom-right" });
-                setTimeout(() => router.push("/components/dashboard"), 1000);
+                setTimeout(() => window.location.reload(), 1000);
             } else {
                 toast.error(data.message || "❌ লগইন ব্যর্থ!", { position: "bottom-right" });
             }

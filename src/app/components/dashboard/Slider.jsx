@@ -104,13 +104,15 @@ export default function SlidesDashboard() {
                     <label className="block text-sm font-medium text-gray-600 mb-1">
                         ✍️ স্লাইড টেক্সট লিখুন
                     </label>
-                    <input
+                    <textarea
                         type="text"
                         placeholder="যেমন: আজকের বিশেষ অফার 🔥"
                         value={text}
                         onChange={(e) => setText(e.target.value)}
                         className="w-full border border-gray-300 focus:border-[#f85606] focus:ring-1 focus:ring-[#f85606] outline-none p-2.5 rounded-lg transition text-gray-700"
-                    />
+                    >
+
+                    </textarea>
                 </div>
 
                 <div className="flex items-center gap-4">
@@ -168,7 +170,7 @@ export default function SlidesDashboard() {
                             </div>
                             <button
                                 onClick={() => handleDelete(slide._id)}
-                                className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+                                className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full transition"
                             >
                                 <Trash2 className="w-4 h-4" />
                             </button>

@@ -25,9 +25,9 @@ export default function Header() {
                 {/* Logo */}
                 <div className="flex items-center gap-3">
                     <img
-                        src="/my-logo.jpg"
+                        src="/my-logo.png"
                         alt="Logo"
-                        className="sm:h-14 h-10 -mt-0.5 object-contain rounded-full border-2 border-white"
+                        className="sm:h-14 h-10 -mt-0.5 object-contain"
                     />
                     <div className="flex flex-col justify-center">
                         <p className='logo-font text-[15px] font-bold sm:text-2xl tracking-wide'>
@@ -81,7 +81,7 @@ export default function Header() {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="flex items-center text-gray-800 hover:text-[#f85606] font-medium transition"
+                                    className="flex items-center text-[#f85606] hover:text-[#832c00] font-medium transition"
                                 >
                                     <span className='mb-1'>{link.icon}</span>
                                     {link.name}
