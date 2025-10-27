@@ -3,8 +3,8 @@ import Provider from "./Provider";
 import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
-  title: "Muntaha Online Shop",
-  description: "Muntaha Online Shop is a Online shopping center. You can order many product from here",
+  title: "Muntaha Multi Trade",
+  description: "Muntaha Multi Trade is a Online shopping and supporting center. You can order and can get support in many ways from here",
   icons: {
     icon: '/my-logo.jpg '
   }

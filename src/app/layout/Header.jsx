@@ -31,7 +31,7 @@ export default function Header() {
                     />
                     <div className="flex flex-col justify-center">
                         <p className='logo-font text-[15px] font-bold sm:text-2xl tracking-wide'>
-                            ABDULLAH ONLINE SHOP
+                            MUNTAHA MULTI TRADE
                         </p>
                     </div>
                 </div>

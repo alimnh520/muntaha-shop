@@ -80,7 +80,7 @@ export default function Animation() {
             <div className="flex flex-col sm:flex-row w-full gap-3">
                 {/* 🔹 Main Slider */}
                 <div
-                    className="relative sm:flex-1 h-[160px] sm:h-[240px] md:h-[320px] lg:h-[380px] overflow-hidden sm:rounded-lg"
+                    className="relative sm:flex-1 h-[160px] sm:h-[220px] md:h-[300px] lg:h-[340px] overflow-hidden sm:rounded-lg"
                     onTouchStart={handleTouchStart}
                     onTouchEnd={handleTouchEnd}
                 >
