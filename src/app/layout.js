@@ -18,6 +18,7 @@ export const metadata = {
     "Bangladesh Online Store",
   ],
   authors: [{ name: "Nahid Hasan", url: "https://wa.link/29e1ei" }],
+
   openGraph: {
     title: "Muntaha Multi Trade | অনলাইন শপিং ও সাপোর্ট সেন্টার",
     description:
@@ -26,7 +27,7 @@ export const metadata = {
     siteName: "Muntaha Multi Trade",
     images: [
       {
-        url: "/my-logo.png",
+        url: "https://muntaha-multi-trade.vercel.app/my-logo.png",
         width: 800,
         height: 600,
         alt: "Muntaha Multi Trade Logo",
@@ -35,6 +36,7 @@ export const metadata = {
     locale: "bn_BD",
     type: "website",
   },
+
   icons: {
     icon: "/my-logo.png",
     shortcut: "/my-logo.png",
