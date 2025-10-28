@@ -20,7 +20,7 @@ const categories = [
 export default function Footer() {
     return (
         <footer className="bg-gradient-to-r from-green-50 via-white to-green-50 text-gray-800 border-t border-t-[#f85606] mt-12">
-            <div className="max-w-7xl mx-auto px-4 md:px-12 lg:px-16 py-10 flex flex-col md:flex-row justify-between gap-10">
+            <div className="max-w-7xl mx-auto px-4 md:px-12 lg:px-16 py-8 flex flex-col md:flex-row justify-between gap-5 lg:gap-10">
 
                 {/* Brand & About */}
                 <div className="flex flex-col gap-4 md:w-1/3">
@@ -77,7 +77,7 @@ export default function Footer() {
                         </div>
                         <div className="flex items-center gap-2">
                             <Phone className="w-4 h-4 text-[#f85606]" />
-                            <a href="tel:+880138194740" className="hover:text-[#f85606] transition">+880 13781-94740</a>
+                            <a href="tel:+880138194740" className="hover:text-[#f85606] transition">+880 17381-94740</a>
                         </div>
                         <div className="flex items-center gap-2">
                             <Mail className="w-4 h-4 text-[#f85606]" />
@@ -104,7 +104,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom Section */}
-            <div className="mt-8 pt-4 border-t border-[#f85606] flex flex-col sm:flex-row items-center justify-between text-sm text-gray-600 px-4 md:px-12">
+            <div className="mt-4 sm:mt-8 pt-4 border-t border-[#f85606] flex flex-col sm:flex-row items-center justify-between text-sm text-gray-600 px-4 md:px-12">
                 <p>© {new Date().getFullYear()} Nahid Hasan. সর্বস্বত্ব সংরক্ষিত।</p>
                 <p className="flex items-center gap-2 mt-2 sm:mt-0">
                     💵 <span className="font-medium text-gray-700">Cash on Delivery</span>

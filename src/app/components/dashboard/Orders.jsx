@@ -248,7 +248,7 @@ export default function Orders() {
                             <div className="mt-8 border-t pt-4 text-center text-sm text-gray-600 space-y-1">
                                 <p> আমাদের ঠিকানা:</p>
                                 <p>নতুন বাজার, কাশিমাড়ী - শ্যামনগর,সাতক্ষীরা</p>
-                                <p>📞 +880 138194740</p>
+                                <p>📞 +880 17381-94740</p>
                                 <p>📧 mostafizurrahman404434@gmail.com</p>
                             </div>
                         </motion.div>
