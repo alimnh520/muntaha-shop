@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <header className="w-full text-white bg-[#f85606] shadow-md fixed top-0 left-0 z-50">
-            <div className="max-w-7xl mx-auto px-3 md:px-12 lg:px-16 flex justify-between items-center h-12 sm:h-16">
+            <div className="max-w-7xl mx-auto px-3 md:px-12 lg:px-16 flex justify-between items-center h-14 sm:h-16">
 
                 {/* Logo */}
                 <div className="flex items-center gap-3">

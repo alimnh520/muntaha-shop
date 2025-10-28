@@ -26,7 +26,7 @@ export default function OfferProductsPage() {
     }, []);
 
     return (
-        <div className="py-3 sm:px-0 px-4 flex flex-col gap-y-3 sm:mt-3">
+        <div className="py-1.5 sm:py-3 sm:px-0 px-4 flex flex-col gap-y-3 sm:mt-3">
             <div className="flex items-center justify-between">
                 <h1 className="sm:text-2xl text-xl font-bold text-[#f85606] mb-5 w-full pb-2 border-b border-b-[#f85606]">
                     ধামাকা অফার

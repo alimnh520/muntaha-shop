@@ -48,7 +48,7 @@ export default function CategoriesPage() {
     ];
 
     return (
-        <div className="py-3 sm:px-0 px-4 flex flex-col gap-y-5">
+        <div className="py-1.5 sm:py-3 sm:px-0 px-4 flex flex-col gap-y-5">
             <h1 className="sm:text-2xl text-xl font-bold text-[#f85606] sm:mb-5 mb-3 w-full pb-2 border-b border-b-[#f85606]">
                 আমাদের ক্যাটাগরি
             </h1>

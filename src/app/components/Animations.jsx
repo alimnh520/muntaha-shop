@@ -136,7 +136,7 @@ export default function Animation() {
                 </div>
 
                 {/* 🔹 Right-side thumbnails (Desktop only) */}
-                <div className="hidden sm:flex flex-col w-24 md:w-32 lg:w-36 gap-2 overflow-y-auto max-h-[420px] rounded-md">
+                <div className="hidden sm:flex flex-col w-24 md:w-32 lg:w-36 gap-2 overflow-y-auto max-h-[340px] rounded-md">
                     {slides.map((item, idx) => (
                         <div
                             key={idx}
