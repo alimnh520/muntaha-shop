@@ -113,7 +113,7 @@ export default function AllProducts() {
 
                                 {/* Product Details */}
                                 <div className="p-3 flex flex-col justify-between gap-y-1">
-                                    <h4 className="line-clamp-2 leading-5 font-semibold text-gray-800 mb-1">
+                                    <h4 className=" truncate leading-5 font-semibold text-gray-800 mb-1">
                                         {p.product_name}
                                     </h4>
 

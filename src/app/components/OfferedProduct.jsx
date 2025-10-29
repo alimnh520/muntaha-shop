@@ -64,7 +64,7 @@ export default function OfferProductsPage() {
                             </div>
 
                             <div className="p-3 flex flex-col justify-between">
-                                <h4 className="line-clamp-2 leading-5 font-semibold text-gray-800 mb-1">{p.product_name}</h4>
+                                <h4 className="truncate leading-5 font-semibold text-gray-800 mb-1">{p.product_name}</h4>
 
                                 <div className="w-full flex flex-col gap-y-1 items-start justify-center">
                                     {p.discount > 0 ? (

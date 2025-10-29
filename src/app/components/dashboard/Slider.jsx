@@ -37,8 +37,8 @@ export default function SlidesDashboard() {
             return;
         }
 
-        if (!image || !text.trim()) {
-            toast.warning("⚠️ ছবি ও টেক্সট দুটোই দিতে হবে!", { position: "bottom-right" });
+        if (!image) {
+            toast.warning("⚠️ ছবি দিতে হবে!", { position: "bottom-right" });
             return;
         }
 
@@ -100,7 +100,7 @@ export default function SlidesDashboard() {
 
             {/* Upload Form */}
             <form onSubmit={handleSubmit} className="space-y-4 mb-8">
-                <div>
+                {/* <div>
                     <label className="block text-sm font-medium text-gray-600 mb-1">
                         ✍️ স্লাইড টেক্সট লিখুন
                     </label>
@@ -113,7 +113,7 @@ export default function SlidesDashboard() {
                     >
 
                     </textarea>
-                </div>
+                </div> */}
 
                 <div className="flex items-center gap-4">
                     <label className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-lg w-48 h-32 cursor-pointer hover:border-[#f85606] transition">

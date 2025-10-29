@@ -29,12 +29,12 @@ export async function POST(req) {
 
         const formData = await req.formData();
         const image = formData.get("image");
-        const text = formData.get("text");
+        // const text = formData.get("text");
 
         const uploaded = await UploadImage(image);
 
         const slide = await Slide.create({
-            text,
+            // text,
             imageUrl: uploaded.secure_url,
             public_id: uploaded.public_id,
         });

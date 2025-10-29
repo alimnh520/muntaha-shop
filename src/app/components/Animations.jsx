@@ -88,11 +88,11 @@ export default function Animation() {
                         className="absolute inset-0 bg-cover bg-center transition-all duration-700"
                         style={{ backgroundImage: `url(${slides[activeIndex]?.imageUrl})` }}
                     >
-                        <div className="absolute inset-0 bg-black/20" />
+                        {/* <div className="absolute inset-0 bg-black/20" /> */}
                     </div>
 
                     {/* 🔹 Text */}
-                    <div className="absolute inset-0 flex items-center justify-center text-center px-2 sm:px-6">
+                    {/* <div className="absolute inset-0 flex items-center justify-center text-center px-2 sm:px-6">
                         <AnimatePresence mode="wait">
                             <motion.p
                                 key={activeIndex}
@@ -105,7 +105,7 @@ export default function Animation() {
                                 {slides[activeIndex]?.text}
                             </motion.p>
                         </AnimatePresence>
-                    </div>
+                    </div> */}
 
                     {/* 🔹 Navigation Buttons */}
                     <button
